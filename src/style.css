@@ -1,3 +1,55 @@
-body {
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: brown;
+  width: 100%;
+  height: 5rem;
+}
+.header-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.contain-name {
+  display: flex;
+  gap: 10px;
+  margin: 30px 10px;
+}
+
+.contain-name h4 {
+  color: #fff;
+  font-family: serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.contain-name i {
+  color: #008000;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin: 30px 10px;
+}
+
+.inputFood {
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+ 
+}
+
+.food-btn {
+  background-color: rgb(223, 137, 137);
+  color: #fff;
+  border: 2px dotted #008000;
+  width: 100%;
+  border-radius: 8px;
+  padding: 0 15px;
 }
