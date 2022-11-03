@@ -1,22 +1,12 @@
-const appId = 'Wyu5tsnxyP8SUDrhnO7g';
-const URL_API = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/likes/`;
+import { getLikes } from './fetchLikes';
 
-// Add a like
-const addLike = async (idItem) => {
-  await fetch(URL_API, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({
-      item_id: idItem,
-    }),
-  });
+const showlike = async (txtLike) => {
+  const mealId = txtLike.getAttribute('data-id');
+  const likesList = await getLikes();
+  const numberLikes = likesList.filter((likeObj) => likeObj.item_id === mealId);
+  if (numberLikes.length > 0) {
+    txtLike.innerHTML = `${numberLikes[0].likes} Likes`;
+  }
 };
 
-// Get likes
-const getLikes = async () => {
-  const response = await fetch(URL_API);
-  const result = await response.json();
-  return result;
-};
-
-export { addLike, getLikes };
+export default showlike;

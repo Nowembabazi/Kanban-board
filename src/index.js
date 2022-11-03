@@ -1,8 +1,7 @@
 import './style.css';
-import showMeals from './modules/showMeals.js';
-import { addLike } from './modules/fetchLikes.js';
-import showlike from './modules/showLike.js';
-import mealsCounter from './modules/mealsCounter.js';
+import showMeals from './modules/showMeals';
+import { addLike } from './modules/fetchLikes';
+import showlike from './modules/showLike';
 import populateComment from './modules/populateComment.js';
 
 // Constants
@@ -12,10 +11,6 @@ const mealsListContainer = document.querySelector('.f-list');
 // Populate the meals cards items
 document.addEventListener('DOMContentLoaded', async () => {
   await showMeals(mealsListContainer);
-  // Selecet meals items
-  const meals = document.getElementsByClassName('meal-card');
-  const counterContentText = document.querySelector('.meals-counts');
-  counterContentText.textContent = mealsCounter([...meals]);
   // Select all likes element
   const textLikes = document.getElementsByClassName('card-likes-txt');
   [...textLikes].forEach(async (textLike) => {
