@@ -226,3 +226,34 @@ form {
   background-color: rgba(128, 128, 128, 0.856);
   color: #fff;
 }
+
+/* desktop  */
+
+@media only screen and (min-width: 768px) {
+  .popup,
+  .popup2 {
+    padding: 5%;
+  }
+
+  .image_u {
+    width: 50%;
+  }
+
+  .upperpopup {
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+
+  .middlepop_simple_titles {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2rem;
+  }
+
+  .detail3,
+  .detail4 {
+    display: flex;
+    justify-content: center;
+  }
+}
+
