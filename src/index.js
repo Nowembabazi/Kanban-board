@@ -1,26 +1,27 @@
 import './style.css';
-import showMeals from './modules/showMeals.js';
-import { addLike } from './modules/fetchLikes.js';
-import showlike from './modules/showLike.js';
-import mealsCounter from './modules/mealsCounter.js';
+import showMeals from './modules/showMeals';
 import populateComment from './modules/populateComment.js';
+import { addLike } from './modules/likes';
 
 // Constants
 const urls = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/N317ounBUtSwOefLVAgO/comments';
 const mealsListContainer = document.querySelector('.f-list');
+const mealsNav = document.querySelector('.control');
 
 // Populate the meals cards items
 document.addEventListener('DOMContentLoaded', async () => {
-  await showMeals(mealsListContainer);
-  // Selecet meals items
-  const meals = document.getElementsByClassName('meal-card');
-  const counterContentText = document.querySelector('.meals-counts');
-  counterContentText.textContent = mealsCounter([...meals]);
-  // Select all likes element
-  const textLikes = document.getElementsByClassName('card-likes-txt');
-  [...textLikes].forEach(async (textLike) => {
-    await showlike(textLike);
-  });
+  await showMeals(mealsListContainer, 0);
+});
+
+// Populate according to the meals-nav
+mealsNav.addEventListener('click', (e) => {
+  e.preventDefault();
+  // Get the clicked nav link index data.
+  const navIndex = e.target.getAttribute('data-index');
+  // Empty the list meals container from the previous cards
+  mealsListContainer.innerHTML = '';
+  // Generate new 9 items
+  showMeals(mealsListContainer, navIndex);
 });
 
 // Post Likes
@@ -28,12 +29,9 @@ window.addEventListener('click', async (e) => {
   // Select the like button
   const likeBtn = e.target;
   if (likeBtn.classList.contains('card-likes')) {
-    // Update numbers of likes on the API
+    // Get the meal ID
     const mealId = likeBtn.getAttribute('data-id');
-    await addLike(mealId);
-    // Update numbers of likes on the screen
-    const txtlike = likeBtn.nextElementSibling;
-    await showlike(txtlike);
+    addLike(mealId);
   }
 });
 
