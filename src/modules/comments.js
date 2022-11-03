@@ -15,7 +15,7 @@ const comments = (comm, data) => {
     dateComment1.appendChild(b1);
     dateComment1.appendChild(p5);
     comm.appendChild(dateComment1);
-  
+
     return null;
   });
 };
