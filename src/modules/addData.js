@@ -1,4 +1,4 @@
-import { URL_API, getFoodList } from './fetchMeals.js';
+import { URL_API, getFoodList } from './listItems.js';
 // Using getFoodList function //
 const getdata = async () => {
   // create an empty array
