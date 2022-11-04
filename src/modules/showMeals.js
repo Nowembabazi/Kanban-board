@@ -1,5 +1,4 @@
-import getdata from './mealsList';
-
+import getdata from './mealsList.js';
 const showMeals = async (container) => {
   // Get meals list
   const meals = await getdata();
