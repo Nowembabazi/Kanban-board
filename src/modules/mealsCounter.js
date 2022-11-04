@@ -1,4 +1,5 @@
-const mealsCounter = (meals) => {
+const mealsCounter = (meals) => 
+{
   return meals.length;
 };
 
