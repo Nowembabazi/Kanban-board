@@ -1,6 +1,9 @@
 import './style.css';
 import showMeals from './modules/showMeals.js';
 import populateComment from './modules/populateComment.js';
+
+const urls = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/N317ounBUtSwOefLVAgO/comments';
+
 // Constants
 const mealsListContainer = document.querySelector('.f-list');
 const mealsNav = document.querySelector('.control');
@@ -21,15 +24,10 @@ mealsNav.addEventListener('click', (e) => {
 
 const handleCommentClick = async (meals) => {
   const [id, name, category, image, origin] = meals;
-  await populateComment(id, name, category, image, origin);
+  await populateComment(id, name, category, image, origin, urls);
   const thepopup = document.getElementById('popup');
   thepopup.classList.add('popup2');
 };
 
-const handleSubmit = () => {
-
-};
-
 // event.preventDefault();
 window.handleCommentClick = handleCommentClick;
-window.handleSubmit = handleSubmit;
