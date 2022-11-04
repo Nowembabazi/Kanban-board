@@ -1,12 +1,11 @@
-import getdata from './addData.js';
+import getdata from './mealsList';
 
-const showMeals = async (container, pageIndex) => {
+const showMeals = async (container) => {
   // Get meals list
   const meals = await getdata();
-  // Slice only 9 meals elements
-  const limitMeals = meals.slice(pageIndex, pageIndex + 9);
+
   // Populate meals to the screen
-  limitMeals.forEach((meal) => {
+  meals.forEach((meal) => {
     const mealTemplate = `
       <li class="col-12 col-sm-6 col-lg-4 p-3">
         <div class="meal-card | card m-0">
@@ -17,13 +16,17 @@ const showMeals = async (container, pageIndex) => {
           />
           <div class="card-body">
             <div class="card-details d-flex justify-content-between pb-3">
-              <h5 class="card-title shorten-text">${meal.name}</h5>
-              <div class="card-likes d-flex">
-                <span class="d-block">5 likes</span>
-                <span>❤️</span>
+              <div class="w-50">
+                <h5 class="card-title shorten-text">${meal.name}</h5>
+                <span class="card-likes-txt d-block" data-id="${meal.id}">0 Likes</span>
+              </div>
+              <div>
+                <button class="card-likes d-flex btn btn-danger" data-id="${meal.id}">
+                  💛
+                </button>
               </div>
             </div>
-            <a href="#" data-id="${meal.id}" onclick="handleCommentClick([${meal.id}, '${meal.name}', '${meal.category}', '${meal.image}', '${meal.origin}'])" class="btn btn-primary d-block">comments</a>
+            <button href="#" data-id="${meal.id}" onclick="handleCommentClick([${meal.id}, '${meal.name}', '${meal.category}', '${meal.image}', '${meal.origin}'])" class="btn btn-dark d-block w-100">comments</button>
           </div>
         </div>
       </li>
