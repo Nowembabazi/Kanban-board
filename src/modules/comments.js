@@ -1,8 +1,5 @@
 const comments = (comm, data) => {
   comm.innerHTML = '';
-  if (data.error) {
-    data = [];
-  }
   data.map((datd) => {
     const dateComment1 = document.createElement('div');
     dateComment1.setAttribute('class', 'date_comment');
@@ -15,7 +12,7 @@ const comments = (comm, data) => {
     dateComment1.appendChild(b1);
     dateComment1.appendChild(p5);
     comm.appendChild(dateComment1);
-  
+
     return null;
   });
 };

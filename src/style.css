@@ -13,10 +13,6 @@ body,
   padding: 0.000001px;
 }
 
-.body-y-scroll {
-  overflow-y: hidden;
-}
-
 .card-text {
   height: 80px;
   overflow-y: hidden;
@@ -36,74 +32,27 @@ body,
   position: relative;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.header {
-  background-color: brown;
-  width: 100%;
-  height: 5rem;
-}
-
-.header-container {
-  display: flex;
-  justify-content: space-around;
-}
-
-.contain-name {
-  display: flex;
-  gap: 10px;
-  margin: 30px 10px;
-}
-
-.contain-name h4 {
-  color: #fff;
-  font-family: serif;
-  font-weight: 500;
-  font-size: 1.5rem;
-}
-
-.contain-name i {
-  color: #008000;
-  font-size: 2rem;
-}
-
-form {
-  display: flex;
-  gap: 10px;
-  margin: 30px 10px;
-}
-
-.inputFood {
-  padding: 8px;
-  border-radius: 8px;
-  border: none;
-}
-
-.food-btn {
-  background-color: rgb(223, 137, 137);
-  color: #fff;
-  border: 2px dotted #008000;
-  width: 100%;
-  border-radius: 8px;
-  padding: 0 15px;
-}
-
 /* mobile-first */
+
 .popup {
   display: none;
+  width: 100%;
+  height: 105vh;
+  overflow: scroll;
+  position: fixed;
+  padding: 15%;
+  z-index: 100;
+  background-color: burlywood;
+  margin-top: -5%;
 }
 
 .popup2 {
   display: block;
   width: 100%;
-  height: 100vh;
-  top: 0.00000111px;
+  margin-top: -5%;
+  height: 105vh;
   z-index: 100;
-  overflow-y: scroll;
+  overflow: scroll;
   position: fixed;
   padding: 15%;
   background-color: burlywood;
@@ -218,6 +167,7 @@ form {
   font-weight: 700;
   font-size: x-large;
   transition: background-color 0.5s ease;
+  cursor: pointer;
 }
 
 .button1:hover {
@@ -254,4 +204,3 @@ form {
     justify-content: center;
   }
 }
-
