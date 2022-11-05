@@ -61,7 +61,7 @@ body,
 }
 
 .close {
-  color: #0000ff;
+  color: #00f;
   font-weight: bolder;
   font-size: 30px;
 }
@@ -183,7 +183,7 @@ body,
   color: rgb(219, 163, 21);
 }
 
-/* desktop  */
+/* desktop */
 
 @media only screen and (min-width: 768px) {
   .popup,
