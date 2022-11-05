@@ -8,12 +8,12 @@ describe('counter tests', () => {
       {
         comment: 'This is nice!',
         creation_date: '2021-01-10',
-        username: 'nick',
+        username: 'John',
       },
       {
         comment: 'Great content!',
         creation_date: '2021-02-10',
-        username: 'Emma',
+        username: 'Jane',
       },
     ];
     const h35 = document.createElement('h3');
