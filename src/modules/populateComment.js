@@ -1,11 +1,11 @@
-import getdata from './mealsList.js';
+import getSource from './mealsList.js';
 import comments from './comments.js';
 import counter from './counterComment.js';
 
 const thebody = document.getElementById('body');
 
 const getinstruction = async (id) => {
-  const df = await getdata();
+  const df = await getSource();
   const x = df.splice(0);
   const filtered = x.filter((b) => parseInt(b.id, 10) === id);
   return filtered[0].cookinginstruction;
@@ -19,7 +19,7 @@ const loadData = async (id) => {
   return dataz.then((data) => data);
 };
 
-const populateComment = async (id, name, category, images, origin, shs) => {
+const populateTalk = async (id, name, category, images, origin, shs) => {
   const s = await loadData(id);
 
   const instr = await getinstruction(id);
@@ -193,4 +193,4 @@ const populateComment = async (id, name, category, images, origin, shs) => {
     }
   });
 };
-export default populateComment;
+export default populateTalk;

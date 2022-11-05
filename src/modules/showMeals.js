@@ -1,8 +1,8 @@
-import getdata from './mealsList.js';
+import getSource from './mealsList.js';
 
-const showMeals = async (container) => {
+const showFoods = async (container) => {
   // Get meals list
-  const meals = await getdata();
+  const meals = await getSource();
 
   // Populate meals to the screen
   meals.forEach((meal) => {
@@ -36,4 +36,4 @@ const showMeals = async (container) => {
   });
 };
 
-export default showMeals;
+export default showFoods;

@@ -1,3 +1,3 @@
-const mealsCounter = (meals) => meals.length;
+const mealsTab = (meals) => meals.length;
 
-export default mealsCounter;
+export default mealsTab;

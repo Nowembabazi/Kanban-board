@@ -1,10 +1,10 @@
-import { URL_API, getFoodList } from './fetchMeals.js';
-// Using getFoodList function //
-const getdata = async () => {
+import { URL_API, getFoodItems } from './fetchMeals.js';
+// Using getFoodItems function //
+const getSource = async () => {
   // create an empty array
   const datas = [];
   // awit api data
-  const foodList = await getFoodList(URL_API);
+  const foodList = await getFoodItems(URL_API);
   // loop to get individual data and populate important data to our array
   foodList.forEach((ata) => {
     const newarr = {
@@ -20,4 +20,4 @@ const getdata = async () => {
   return datas;
 };
 
-export default getdata;
+export default getSource;

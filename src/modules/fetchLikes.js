@@ -2,7 +2,7 @@ const appId = 'DU68kcAdFunGOioskx5d';
 const URL_API = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/likes/`;
 
 // Add a like
-const addLike = async (idItem) => {
+const addPlus = async (idItem) => {
   await fetch(URL_API, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -13,10 +13,10 @@ const addLike = async (idItem) => {
 };
 
 // Get likes
-const getLikes = async () => {
+const getPlus = async () => {
   const response = await fetch(URL_API);
   const result = await response.json();
   return result;
 };
 
-export { addLike, getLikes };
+export { addPlus, getPlus };
