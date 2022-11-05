@@ -1,17 +1,18 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # Project Name
+KANBAN-BOARD
+
 
 > KANBAN-BOARD.
 
 
 ## Built With
-
-- Bootstrap
-- HTML5
-- CSS5
-- JavaScript
-- Webpack
+-HTML5
+-CSS3
+-Bootstrap
+-JavaScript
+-Webpack
 
 ## Live Demo (if available)
 
@@ -31,7 +32,8 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ### Install
-npm install
+NPM INSTALL
+
 
 ### Usage
 
@@ -43,8 +45,6 @@ npm run deploy
 
 
 ## Authors
-
-👤 **Author1**
 
 👤 Nowembabazi Nickson
 
