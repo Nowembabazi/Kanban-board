@@ -1,4 +1,4 @@
-import { getLikes } from './fetchLikes.js';
+import { getLikes } from './fetchLikes';
 
 const showlike = async (txtLike) => {
   const mealId = txtLike.getAttribute('data-id');
