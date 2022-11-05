@@ -25,7 +25,9 @@ describe('Test Counting', () => {
         <div class="meal-card"></div>
         <div class="meal-card"></div>
         <div class="meal-card"></div>
-        
+        <div class="meal-card"></div>
+        <div class="meal-card"></div>
+        <div class="meal-card"></div>
     `;
     const meals = document.getElementsByClassName('meal-card');
 

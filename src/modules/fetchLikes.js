@@ -1,4 +1,4 @@
-const appId = 'DU68kcAdFunGOioskx5d';
+const appId = 'Wyu5tsnxyP8SUDrhnO7g';
 const URL_API = `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/${appId}/likes/`;
 
 // Add a like
