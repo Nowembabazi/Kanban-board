@@ -1,4 +1,4 @@
-import mealsCounter from '../mealsCounter';
+import mealsCounter from '../mealsCounter.js';
 
 describe('Test Counting', () => {
   test('0 DOM elements for meals should equal to 0', () => {
