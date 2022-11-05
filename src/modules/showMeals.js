@@ -1,10 +1,10 @@
 import getSource from './mealsList.js';
 
 const showFoods = async (container) => {
-  // Get meals list
+  
   const meals = await getSource();
 
-  // Populate meals to the screen
+  
   meals.forEach((meal) => {
     const mealTemplate = `
       <li class="col-12 col-sm-6 col-lg-4 p-3">
