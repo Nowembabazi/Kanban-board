@@ -2,14 +2,16 @@
 
 # Project Name
 
-> Description the project.
+> KANBAN-BOARD.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- Bootstrap
+- HTML5
+- CSS5
+- JavaScript
+- Webpack
 
 ## Live Demo (if available)
 
@@ -29,22 +31,26 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 ### Install
+npm install
 
 ### Usage
 
 ### Run tests
+npm run test
 
 ### Deployment
-
+npm run deploy
 
 
 ## Authors
 
 👤 **Author1**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+👤 Nowembabazi Nickson
+
+-GitHub: @Nowembabazi
+-Twitter: @NowembabaziN
+-LinkedIn: @NowembabaziNickson
 
 👤 **Author2**
 
