@@ -1,18 +1,31 @@
+
+Nowembabazi nickson <nowembabazin8@gmail.com>
+10:29 AM (0 minutes ago)
+to nowembabazin
+
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-KANBAN-BOARD
-
-
-> KANBAN-BOARD.
-
+# Kanban-Board
+In this project we collaborated to build a simple meal recipe for a restaurant using API to help clients the right dishes.the following was implemented in this project using ES6 syntax as seen below:
+-JavaScript to make websites dynamic and build basic single page apps.
+-ES6 modules.
+-callbacks and promises.
+-webpack.
+-Applied JavaScript best practices and language style guides in code.
+-Use AAA pattern for unit tests.
+-Write units tests for a JavaScript app.
+-Send and receive data from an API.
+-Use API documentation.
+-A home page showing a list of items that you can "like."
+-A popup window with more data about an item that you can use to comment on it or reserve it for a period of time.
 
 ## Built With
--HTML5
--CSS3
--Bootstrap
--JavaScript
--Webpack
+
+- Bootstrap
+- HTML5
+- CSS5
+- JavaScript
+- Webpack
 
 ## Live Demo (if available)
 
@@ -21,19 +34,19 @@ KANBAN-BOARD
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+To get a local copy up and running follow these simple example steps.
+
+- Clone this repo using this URL (link) or download it as a ZIP format from the green button above under the text Code.
 
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
-
+- A computer or device with good network connectivity.
 ### Setup
 
 ### Install
-NPM INSTALL
-
+npm install
 
 ### Usage
 
@@ -46,17 +59,17 @@ npm run deploy
 
 ## Authors
 
-👤 Nowembabazi Nickson
+👤 **Nowembabazi Nickson**
 
--GitHub: @Nowembabazi
--Twitter: @NowembabaziN
--LinkedIn: @NowembabaziNickson
+-GitHub: [@githubhandle](https://github.com/@Nowembabazi)
+-Twitter: [@twitterhandle](https://twitter.com/@NowembabaziN)
+-LinkedIn:  [LinkedIn](https://linkedin.com/in/@NowembabaziNickson)
 
-👤 **Author2**
+👤 **Ngufor Emmanuella**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/Ngufor-emmanuella)
+- Twitter: [@twitterhandle](https://twitter.com/Ngufor-emmanuella)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Ngufor-emmanuella)
 
 ## 🤝 Contributing
 
